@@ -43,9 +43,14 @@ const Drawer = ({ restaurant, visible, onCloseDrawer }) => {
           contact.formattedPhone && (
             <span className="address phone">{`${contact.formattedPhone}`}</span>
           )}
+        <br />
         {contact &&
           contact.twitter && (
-            <span className="address">{`@${contact.twitter}`}</span>
+            <span className="address">
+              <a href={`https://twitter.com/${contact.twitter}`}>
+                {`@${contact.twitter}`}
+              </a>
+            </span>
           )}
       </div>
     </div>
