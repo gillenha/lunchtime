@@ -1,0 +1,99 @@
+img {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+.title-drawer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Muli, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  height: 140px;
+  background: #43e895;
+  color: #ffffff;
+}
+
+.googleMap {
+  height: 100%;
+  width: 100%;
+}
+
+.back {
+  position: relative;
+  right: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#drawer {
+  display: flex;
+  flex-direction: column;
+  transition: transform 800ms ease-in-out;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  color: white;
+  height: 100%;
+  background-color: black;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+#drawer.slideIn {
+  transform: translateX(0);
+}
+
+#drawer.slideOut {
+  transform: translateX(-100%);
+}
+
+.google {
+  display: flex;
+  flex: 1;
+  background: orange;
+}
+.name-category {
+  display: flex;
+  flex-direction: column;
+  background: #34b379;
+  color: white;
+  font-family: Muli, sans-serif;
+  padding: 12px 0;
+}
+.name-drawer {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  font-family: Muli, sans-serif;
+  font-weight: bold;
+  padding-left: 28px;
+}
+.category-drawer {
+  font-size: 24px;
+  color: white;
+  font-family: Muli, sans-serif;
+  font-weight: 100;
+  padding-left: 28px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: black;
+}
+.address {
+  font-family: Muli, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+}
+.phone {
+  margin-top: 20px;
+}

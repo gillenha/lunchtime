@@ -1,0 +1,41 @@
+.gradient {
+  background-image: "/Users/chris/bottlerocket/lunchtyme/src/images/cellGradientBackground@2x.png";
+  background-size: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15;
+}
+.info {
+  position: absolute;
+  bottom: 16px;
+}
+.background {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  margin-bottom: 0;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+.background:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.category {
+  color: white;
+  font-family: Muli, sans-serif;
+  font-weight: 100;
+  margin-left: 18px;
+}
+.name {
+  color: white;
+  font-family: Muli, sans-serif;
+  font-weight: bold;
+  margin-left: 18px;
+}
